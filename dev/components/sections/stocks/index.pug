@@ -1,0 +1,28 @@
+.section
+    .container
+        .stocks
+            .stocks__title
+                p  Акции
+                span Смотреть все 
+                    span
+                        +svg({
+                            name: 'arrow'                       
+                        })
+            .special__slider(data-slider="items" data-count="4")
+                ul.stocks__list(data-sliders)
+                    li.stocks__item
+                        include ../../blocks/product-card/index.pug
+                    li.stocks__item
+                        include ../../blocks/product-card/index.pug
+                    li.stocks__item
+                        include ../../blocks/product-card/index.pug
+                    li.stocks__item
+                        include ../../blocks/product-card/index.pug
+                    li.stocks__item
+                        include ../../blocks/product-card/index.pug
+                    li.stocks__item
+                        include ../../blocks/product-card/index.pug
+                    li.stocks__item
+                        include ../../blocks/product-card/index.pug
+                    li.stocks__item
+                        include ../../blocks/product-card/index.pug

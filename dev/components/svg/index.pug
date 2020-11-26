@@ -1,0 +1,5 @@
+include ../global.pug
+
+mixin svg(data)
+    svg
+        use(xlink:href=global.paths.icons()+'#svg-'+data.name)

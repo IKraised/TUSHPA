@@ -1,0 +1,28 @@
+.section
+    .container
+        .recommend
+            .recommend__title
+                p  Рекомендации
+                span Смотреть все 
+                    span
+                        +svg({
+                            name: 'arrow'                       
+                        })
+            .special__slider(data-slider="items" data-count="4")
+                ul.recommend__list(data-sliders)
+                    li.recommend__item
+                        include ../../blocks/product-card/index.pug
+                    li.recommend__item
+                        include ../../blocks/product-card/index.pug
+                    li.recommend__item
+                        include ../../blocks/product-card/index.pug
+                    li.recommend__item
+                        include ../../blocks/product-card/index.pug
+                    li.recommend__item
+                        include ../../blocks/product-card/index.pug
+                    li.recommend__item
+                        include ../../blocks/product-card/index.pug
+                    li.recommend__item
+                        include ../../blocks/product-card/index.pug
+                    li.recommend__item
+                        include ../../blocks/product-card/index.pug

@@ -1,0 +1,117 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+  font-family: 'Proxima Nova Lt', sans-serif;
+
+}
+body{
+  background-color: #E5E5E5;
+}
+:focus {
+  outline: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul,
+li,
+p,
+a,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  background-color: transparent;
+  font: inherit;
+  /* По дефолту, шрифтовые свойства, для этих элементов не наследуются */
+  color: inherit;
+  letter-spacing: inherit;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+select {
+  text-align: left;
+  text-transform: none;
+}
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0px 15px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main {
+  min-height: 750px;
+}
+
+.product-card__fav{
+  transition: all 0.34s ease-in;
+  cursor: pointer;
+  & svg{
+    transition: all 0.34s ease-in;
+  }
+}
+.product-card__fav:hover{
+  & svg{
+    fill: #EA6D56;
+  }
+}
+.header-nav__item{
+  position: relative;
+  & .header-nav__link:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 1px;
+    background: #fff;
+    transition: all 0.34s ease-in;
+  }
+}
+.header-nav__item:hover .header-nav__link:before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #fff;
+}
+

@@ -1,0 +1,40 @@
+- 
+    var list = {
+        items: [
+            {
+                name: 'Категории',
+                href: '#'
+            },
+            {
+                name: 'Акции',
+                href: '#'
+            },
+            {
+                name: 'О компании',
+                href: '#'
+            },
+            {
+                name: 'Доставка',
+                href: '#'
+            },
+            {
+                name: 'Оплата',
+                href: '#'
+            },
+            {
+                name: 'Прайс-лист',
+                href: '#'
+            },
+            {
+                name: 'Контакты',
+                href: '#'
+            },
+        ]
+    }
+
+.header-nav
+    .container
+        ul.header-nav__list
+            each item in list.items
+                li.header-nav__item
+                    a.header-nav__link(href=item.href)=item.name

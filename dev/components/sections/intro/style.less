@@ -1,0 +1,123 @@
+.intro{
+    &__box{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 54px;
+    }
+    &__left{
+        
+    }
+    &__right{
+        border-radius: 5px;
+        width: 74%;
+    
+    }
+    &__slider{
+        border-radius: 5px;
+    }
+    &__item{
+        position: relative;
+        border-radius: 5px;
+    }
+    &__img{
+        max-width: 870px;
+        width: 100%;
+        object-fit: contain;
+        border-radius: 5px;
+        & img{
+            width: 100%;
+            border-radius: 5px;
+        }
+    }
+    &__text{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 123.9%;
+        /* or 45px */
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: #FFFFFF;
+        max-width: 433px;
+        text-align: center;
+
+    }
+
+}
+
+@media(max-width: 1024px) {
+    .intro{
+       
+        &__left{
+            display: none;
+        }
+        &__right{
+            width: 100%;
+        }
+        &__slider{
+            width: 100%;
+        }
+        &__img{
+            max-width: 1024px;
+            height: 100%;
+            & img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        &__box{
+            margin-bottom: 0px;
+        }
+        &__item{
+            width: 800px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .intro{
+        &__text{
+            font-style: normal;
+            font-weight: bold;
+            font-size: 28px;
+            line-height: 123.9%;
+            /* or 35px */
+            letter-spacing: 0.03em;
+            color: #FFFFFF;
+            text-align: left;
+            width: 100%;
+            left: 0;
+            transform: translate(16px, -50%);
+            max-width: 400px;
+        }
+        & .container{
+            max-width: unset;
+            padding: 0;
+            margin: 0;
+        }
+        &__img{
+            height: 484px;
+            & img{
+                height: 484px;
+                object-fit: cover;
+                object-position: right;
+            }
+        }
+    }
+    
+}
+@media (max-width: 500px) {
+    .intro{
+        &__text{
+            max-width: 215px;
+        }
+    }
+    
+}
