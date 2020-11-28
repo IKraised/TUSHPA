@@ -19,14 +19,108 @@ header.header
                     +svg({
                         name: 'search'
                     })
+                .search-bar
+                    .search-bar__list
+                        .search-bar__img
+                            img(src="img/product-card.png", alt="")
+                        .search-bar__text
+                            span Ritter Sport с начинкой из кокосового крема и вафлей 
+                        .search-bar__cart
+                            +svg({
+                                name: 'cart'
+                            })
+                    .search-bar__list
+                        .search-bar__img
+                            img(src="img/product-card.png", alt="")
+                        .search-bar__text
+                            span Ritter Sport с начинкой из кокосового крема и вафлей 
+                        .search-bar__cart
+                            +svg({
+                                name: 'cart'
+                            })
+                    .search-bar__list
+                        .search-bar__img
+                            img(src="img/product-card.png", alt="")
+                        .search-bar__text
+                            span Ritter Sport с начинкой из кокосового крема и вафлей 
+                        .search-bar__cart
+                            +svg({
+                                name: 'cart'
+                            })
+                    .search-bar__btn
+                        a.special-card__link  Перейти к результатам
+                                span 
+                                    +svg({
+                                        name: 'arrow'
+                                    })
             .header__fav
                 +svg({
                     name: 'fav'
                 })
             .header__cart
-                +svg({
-                    name: 'cart'
-                })
+                span
+                    +svg({
+                        name: 'cart'
+                    })
+                .header__cart-mini.cart-mini
+                    <svg width="41" height="21" viewBox="0 0 41 21" fill="none" xmlns="http://www.w3.org/2000/svg" class="cart-mini__decor">
+                        <path d="M0.402344 21V21C2.02406 21 3.56314 20.2135 4.50053 18.8901L15.9262 2.76008C17.9189 -0.0531069 22.0937 -0.0530879 24.0864 2.76011L35.5118 18.8901C36.4492 20.2135 37.9702 21 39.5919 21H40.0063H0.402344Z"/>
+                    </svg>
+                    ul.cart-mini__list
+                        li.cart-mini__item
+                            .cart-mini__delete
+                                +svg({
+                                    name: 'cart-delete'
+                                })
+                            .cart-mini__img 
+                                img(src="img/product-card.png", alt="")
+                            .cart-mini__name Ritter SportSportSport
+                            .cart-mini__current
+                                .product-card__counter
+                                    span.product-card__counter-minus -
+                                    input(type="text" value="1")
+                                    span.product-card__counter-plus +
+                            .cart-mini__price
+                                span 60 
+                                span ₽
+                        li.cart-mini__item
+                            .cart-mini__delete
+                                +svg({
+                                    name: 'cart-delete'
+                                })
+                            .cart-mini__img 
+                                img(src="img/product-card.png", alt="")
+                            .cart-mini__name Ritter SportSportSport
+                            .cart-mini__current
+                                .product-card__counter
+                                    span.product-card__counter-minus -
+                                    input(type="text" value="1")
+                                    span.product-card__counter-plus +
+                            .cart-mini__price
+                                span 60 
+                                span ₽
+                        li.cart-mini__item
+                            .cart-mini__delete
+                                +svg({
+                                    name: 'cart-delete'
+                                })
+                            .cart-mini__img 
+                                img(src="img/product-card.png", alt="")
+                            .cart-mini__name Ritter SportSportSport
+                            .cart-mini__current
+                                .product-card__counter
+                                    span.product-card__counter-minus -
+                                    input(type="text" value="1")
+                                    span.product-card__counter-plus +
+                            .cart-mini__price
+                                span 60 
+                                span ₽
+                        li.cart-mini__item
+                            a.special-card__link  Оформить заказ 
+                                span 
+                                    +svg({
+                                        name: 'arrow'
+                                    })
         .header-mobail
             .header__login
                 img(src="img/logo-mobile.png", alt="")

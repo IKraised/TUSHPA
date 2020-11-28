@@ -19,3 +19,31 @@
         text-decoration: none;
     }
 }
+.header-nav__item{
+    position: relative;
+    &:hover .nav-mobile__box{ 
+        display: block;
+    }
+    &:hover .cat-mini__decor{
+        display: block;
+    }
+}
+.nav-mobile__box{
+    display: none;
+    background-color: #FFFFFF;
+    width: 270px;
+    overflow: hidden;
+    position: absolute;
+    top: 40px;
+    left: -28px;
+    z-index: 4;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(166, 68, 52, 0.05);
+}
+.cat-mini__decor{
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    fill: #FFFFFF;
+    display: none;
+}

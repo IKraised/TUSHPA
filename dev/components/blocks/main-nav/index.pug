@@ -4,28 +4,31 @@
     ul.main-nav__list
         li.main-nav__item
             a.main-nav__link(href="javascript:void(0);") Бакалея
-            ul.main-nav__sublist
-                li.main-nav__subitem
-                    a.main-nav__sublink(href="javascript:void(0);")
-                        span  Бакалея
-                li.main-nav__subitem
-                    a.main-nav__sublink(href="javascript:void(0);") Макороны
-                li.main-nav__subitem
-                    a.main-nav__sublink(href="javascript:void(0);") Крупы
-                li.main-nav__subitem
-                    a.main-nav__sublink(href="javascript:void(0);") Мука
-                li.main-nav__subitem
-                    a.main-nav__sublink(href="javascript:void(0);") Сахар и соль
-                li.main-nav__subitem
-                    a.main-nav__sublink(href="javascript:void(0);") Готвоые завраки
-                li.main-nav__subitem
-                    a.main-nav__sublink(href="javascript:void(0);") Продукты быстрого приготовления
-                li.main-nav__subitem
-                    a.main-nav__sublink(href="javascript:void(0);") Перейти в категорию
-                        span 
-                            +svg({
-                                name: 'arrow'
-                            })
+            .main-nav__subbox 
+                ul.main-nav__sublist
+                    li.main-nav__subitem
+                        a.main-nav__sublink(href="javascript:void(0);")
+                            span  Бакалея
+                    li.main-nav__subitem
+                        a.main-nav__sublink(href="javascript:void(0);") Макороны
+                    li.main-nav__subitem
+                        a.main-nav__sublink(href="javascript:void(0);") Крупы
+                    li.main-nav__subitem
+                        a.main-nav__sublink(href="javascript:void(0);") Мука
+                    li.main-nav__subitem
+                        a.main-nav__sublink(href="javascript:void(0);") Сахар и соль
+                    li.main-nav__subitem
+                        a.main-nav__sublink(href="javascript:void(0);") Готвоые завраки
+                    li.main-nav__subitem
+                        a.main-nav__sublink(href="javascript:void(0);") Продукты быстрого приготовления
+                    li.main-nav__subitem
+                        a.main-nav__sublink(href="javascript:void(0);") Перейти в категорию
+                            span 
+                                +svg({
+                                    name: 'arrow'
+                                })
+                .main-nav__subimg
+                    img(src="img/subimg.png", alt="")
         li.main-nav__item
             a.main-nav__link(href="javascript:void(0);") Консервы
         li.main-nav__item
