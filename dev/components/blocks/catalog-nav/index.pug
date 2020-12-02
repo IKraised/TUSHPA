@@ -1,0 +1,106 @@
+.catalog-nav
+    .catalog-nav__box
+        .catalog-nav__title
+            span Бакалея
+        .catalog-nav__subtitle
+            span Категории
+        ul.catalog-nav__list
+            li.catalog-nav__item
+                a(href='#').catalog-nav__filter Бакалея
+                ul.catalog-nav__sublist
+                    li.catalog-nav__subitem
+                        a(href='#').catalog-nav__subfilter Макароны
+                    li.catalog-nav__subitem
+                        a(href='#').catalog-nav__subfilter Крупы
+                    li.catalog-nav__subitem
+                        a(href='#').catalog-nav__subfilter Мука
+                    li.catalog-nav__subitem
+                        a(href='#').catalog-nav__subfilter Сахар и соль
+                    li.catalog-nav__subitem
+                        a(href='#').catalog-nav__subfilter Готовые завтраки
+            li.catalog-nav__item
+                a(href='#').catalog-nav__filter Консервы
+            li.catalog-nav__item
+                a(href='#').catalog-nav__filter Кондитерские изделия
+            li.catalog-nav__item
+                a(href='#').catalog-nav__filter Молочная продукция
+            li.catalog-nav__item
+                a(href='#').catalog-nav__filter Сыр
+            li.catalog-nav__item
+                a(href='#').catalog-nav__filter Напитки
+            li.catalog-nav__item
+                a(href='#').catalog-nav__filter Чай
+            li.catalog-nav__item
+                a(href='#').catalog-nav__filter Кофе
+            li.catalog-nav__item
+                a(href='#').catalog-nav__filter Другое
+        .catalog-nav__subtitle
+            span Специальные категории
+        ul.catalog-nav__list
+            li.catalog-nav__item
+                label
+                    span.catalog-nav__checkbox.checkbox_active
+                        +svg({
+                            name: 'checkbox-active'
+                        })
+                    input(type="checkbox")
+                    a.catalog-nav__filter Акции
+            li.catalog-nav__item
+               label
+                    span.catalog-nav__checkbox
+                        +svg({
+                            name: 'checkbox-active'
+                        })
+                    input(type="checkbox")
+                    a.catalog-nav__filter Новинки
+                    
+        .catalog-nav__subtitle
+                    span Бренды
+        ul.catalog-nav__list.catalog-nav__list_brands
+            li.catalog-nav__item
+                label
+                    span.catalog-nav__checkbox
+                        +svg({
+                            name: 'checkbox-active'
+                        })
+                    a(href='#').catalog-nav__filter Barilla
+            li.catalog-nav__item
+                label
+                    span.catalog-nav__checkbox
+                        +svg({
+                            name: 'checkbox-active'
+                        })
+                    a(href='#').catalog-nav__filter Barilla
+            li.catalog-nav__item
+                label
+                    span.catalog-nav__checkbox
+                        +svg({
+                            name: 'checkbox-active'
+                        })
+                    a(href='#').catalog-nav__filter Barilla
+            li.catalog-nav__item
+                label
+                    span.catalog-nav__checkbox
+                        +svg({
+                            name: 'checkbox-active'
+                        })
+                    a(href='#').catalog-nav__filter Barilla
+            li.catalog-nav__item
+                label
+                    span.catalog-nav__checkbox
+                        +svg({
+                            name: 'checkbox-active'
+                        })
+                    a(href='#').catalog-nav__filter Barilla
+            li.catalog-nav__item
+                label
+                    span.catalog-nav__checkbox
+                        +svg({
+                            name: 'checkbox-active'
+                        })
+                    a(href='#').catalog-nav__filter Barilla
+        .catalog-nav__clear
+            +svg({
+                name: 'cart-delete'
+            })
+            span Сбросить фильтры

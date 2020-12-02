@@ -1,0 +1,34 @@
+.breadcrumbs{
+
+    &__list{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    &__item{
+        & span{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 19px;
+            color: #C4C4C4;
+            position: relative;
+            margin-right: 25px;
+            &:before{
+                content: '';
+                position: absolute;
+                top: 50%;
+                right: -15px;
+                width: 5px;
+                height: 5px;
+                transform: translateY(-50%);
+                border-radius: 50%;
+                background-color: #C4C4C4;
+            }
+        }
+        &:last-child span:before{
+            display: none;
+        }
+    }
+
+}

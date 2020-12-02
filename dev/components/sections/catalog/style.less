@@ -1,0 +1,72 @@
+.catalog{
+    &-box{
+        margin-left: 20px;
+        &__top{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+    }
+    & .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    & .product-card{
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+    &__pagination{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 36px;
+        &-box{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        & svg{
+            width: 7px;
+            height: 11px;
+            fill:  #EA6D56;
+        }
+        & svg:first-child{
+            transform: rotate(180deg);
+        }
+        & span{
+            width: 17px;
+            height: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 31px;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 19px;
+            color: #4F4F4F;
+            cursor: pointer;
+            &.pag-active{
+                background: #EA6D56;
+                box-shadow: inset -1px 1px 1px #C15B49;
+                border-radius: 2px;
+                color: white;
+            }
+        }
+        & span:nth-child(2){
+            margin-left: 50px;
+        }
+        & span:nth-child(5){
+            margin-right: 0px;
+            margin-right: 50px;
+        }
+    }
+}

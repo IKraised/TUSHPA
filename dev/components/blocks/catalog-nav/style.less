@@ -1,0 +1,130 @@
+.catalog-nav{
+    max-width: 270px;
+    width: 100%;
+    background-color: white;
+    top: 0;
+    left: 0;
+    padding-right: 18px;
+    &__title{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 29px;
+        color: #198772;
+        margin-bottom: 33px;
+    }
+    &__subtitle{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px;
+        /* identical to box height */
+        color: #4F4F4F;
+        margin-bottom: 10px;
+    }
+    &__filter{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color: #4F4F4F;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    &__subfilter{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 29px;
+        /* or 207% */
+        display: flex;
+        align-items: center;
+        color: #4F4F4F;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    &__subitem{
+        list-style-type: disc;
+    }
+    &__item{
+        margin-bottom: 10px;
+        & label{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        & input{
+            display: none;
+        }
+    }
+    &__item:last-child{
+        margin-bottom: 32px;
+    }
+    &__sublist{
+        margin-left: 20px;
+        color: #EA6D56;
+    }
+    &__checkbox{
+        display: block;
+        width: 12px;
+        height: 12px;
+        border: 1px solid #F2F2F2;
+        border-radius: 2px;
+        margin-right: 18px;
+        cursor: pointer;
+        &.checkbox_active{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #EA6D56;
+            box-shadow: inset -1px 1px 1px #C15B49;
+            & svg{
+                display: block;
+            }
+        }
+        & svg{
+            width: 6px;
+            height: 5px;
+            display: none;
+        }
+    }
+    &__list_brands{
+        max-height: 106px;
+        height: 100%;
+        overflow-y: scroll;
+        &::-webkit-scrollbar-track{
+            background: #F6FAFD;
+            box-shadow: inset -1px 1px 2px rgba(79, 79, 79, 0.1);
+            border-radius: 4px;
+        }
+        &::-webkit-scrollbar{
+            width: 6px;
+            background-color: #F5F5F5;
+        }
+        &::-webkit-scrollbar-thumb{
+            background-color: #EA6D56;
+            border-radius: 2px;
+            width: 2px;
+        }
+
+    }
+    &__clear{
+        color: #E0E0E0;
+        margin-bottom: 22px;
+        & span{
+            border-bottom: 1px solid #E0E0E0    ;
+        }
+        & svg{
+            width: 12px;
+            height: 16px;
+            margin-right: 10px;
+            fill: #E0E0E0;
+        }
+
+    }
+
+}
+
+.catalog{
+    position: relative;
+}
