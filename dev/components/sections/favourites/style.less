@@ -1,0 +1,20 @@
+.favourites{
+    padding-bottom: 60px;
+    &__list{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    &__item{
+        &:nth-child(4n+4){
+            & .product-card{
+                margin-right: 0px;
+            }
+        }
+        margin-bottom: 30px;
+    }
+    & .catalog__pagination{
+        margin-top: 30px;
+    }
+}
