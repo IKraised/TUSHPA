@@ -1,0 +1,72 @@
+.order
+    .container
+        
+        .order__title
+            span Оформление заказа
+        .order__box
+            .order__personal.order-personal
+                .basket__subtitle
+                    span Личные данные
+                ul.order-personal__list
+                    li.order-personal__item
+                        .order-personal__input
+                            input(type="text" placeholder="ФИО")
+                    li.order-personal__item
+                        .order-personal__input
+                            input(type="text" placeholder="Название компании")
+                    li.order-personal__item
+                        .order-personal__input
+                            input(type="text" placeholder="Телефон")
+                    li.order-personal__item
+                        .order-personal__input
+                            input(type="text" placeholder="E-mail")
+            .order__delivery.order-delivery
+                .basket__subtitle
+                    span Способ доставки
+                .order-delivery__btn
+                    span Доставка
+                .order-delivery__pickup
+                    span Самовывоз
+        .order-center
+            .order__address.order-address
+                .order-address__title
+                    span Адрес доставки
+                .order-address__input
+                    input(type="text" placeholder="Улица")
+                .order-address__input_mini
+                    .order-address__input
+                        input(type="text" placeholder="Улица")
+                    .order-address__input
+                        input(type="text" placeholder="Улица")
+                    .order-address__input
+                        input(type="text" placeholder="Улица")
+                .order-address__input
+                    textarea(name="", cols="30", rows="10" placeholder="Комментарий")
+                .order-address__select
+                    span 
+                        +svg({
+                            name: "map"
+                        })
+                    span Выбрать из сохраненных адресов
+            .order__time.order-time
+                .order-time__box
+                    .order-time__title
+                        span Дата и время
+                    .order-time__left
+                        .order-time__btn
+                            span 9:00 – 12:00
+                        .order-time__btn
+                            span 12:00 – 15:00
+                        .order-time__btn
+                            span 15:00 – 18:00
+                        .order-time__btn
+                            span 18:00 – 21:00
+                        .order-time__btn
+                            span 9:00 – 21:00
+                .order-time__right
+                    <div class="datepicker-here"></div>
+        .order-bottom
+            include ../../blocks/payment-method/index.pug
+            include ../../blocks/comment/index.pug
+        
+                
