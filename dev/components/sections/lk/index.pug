@@ -1,4 +1,14 @@
 .lk
+    .mobile-back__btn
+        span.mobile-back__btn-arrow
+            +svg({
+                name: 'breadcrumb-arrow'
+            })
+        span Личный кабинет
+        span 
+            +svg({
+                name: 'exit'
+            })
     .container
         .catalog-box__top
             include ../../blocks/breadcrumbs/index.pug
@@ -10,6 +20,8 @@
         .lk__title 
             span Личный кабинет
         .lk__box
+            .lk-fade__text
+                span Личные данные
             .lk__data.lk-data
                 .lk-data__title
                     span Личные данные
@@ -22,17 +34,44 @@
                 .lk-data__input
                     input(type="text" placeholder="ФИО")
             .lk__password.lk-password
-                .lk-pass
+                .lk-passwort__title
                     span Настройки пароля
                 .lk-password__input
-                    input(type="text" placeholder="ФИО")
+                    input(type="text" placeholder="Текущий пароль")
                 .lk-password__input
-                    input(type="text" placeholder="ФИО")
+                    input(type="text" placeholder="Новый пароль")
                 .lk-password__input
+                    input(type="text" placeholder="Повторите новый пароль")
+                .lk-password__btn
+                    span Сохранить изменения
+        .lk-mobile__data
+            
+            .lk__data.lk-data
+                .lk-data__title
+                    span Личные данные
+                .lk-data__input
                     input(type="text" placeholder="ФИО")
+                .lk-data__input
+                    input(type="text" placeholder="ФИО")
+                .lk-data__input
+                    input(type="text" placeholder="ФИО")
+                .lk-data__input
+                    input(type="text" placeholder="ФИО")
+            .lk__password.lk-password
+                .lk-password__title
+                    span Настройки пароля
+                .lk-password__input
+                    input(type="text" placeholder="Текущий пароль")
+                .lk-password__input
+                    input(type="text" placeholder="Новый пароль")
+                .lk-password__input
+                    input(type="text" placeholder="Повторите новый пароль")
+            .lk-save__btn
                 .lk-password__btn
                     span Сохранить изменения
         .lk__address.lk-address
+            .lk-fade__text
+                span Сохраненные адреса
             .lk-address__title
                 span Сохраненные адреса
             ul.lk-address__list
@@ -75,9 +114,65 @@
                         +svg({
                             name: 'edit'
                         })
+        .lk-mobile__address
+            ul.lk-address__list
+                li.lk-address__item
+                    .lk-address__delete
+                        +svg({
+                            name: 'cart-delete'
+                        })
+                    .lk-address__name
+                        span  Дмитровский офис
+                        span 
+                            +svg({
+                                name: 'edit'
+                            })
+                    .lk-address__location 
+                        span 127540, Москва, ул Дмитровское шоссе, дом 17, офис 78
+                li.lk-address__item
+                    .lk-address__delete
+                        +svg({
+                            name: 'cart-delete'
+                        })
+                    .lk-address__name
+                        span  Дмитровский офис
+                        span 
+                            +svg({
+                                name: 'edit'
+                            })
+                    .lk-address__location 
+                        span 127540, Москва, ул Дмитровское шоссе, дом 17, офис 78
+                li.lk-address__item
+                    .lk-address__delete
+                        +svg({
+                            name: 'cart-delete'
+                        })
+                    .lk-address__name
+                        span  Дмитровский офис
+                        span 
+                            +svg({
+                                name: 'edit'
+                            })
+                    .lk-address__location 
+                        span 127540, Москва, ул Дмитровское шоссе, дом 17, офис 78
+                li.lk-address__item
+                    .lk-address__delete
+                        +svg({
+                            name: 'cart-delete'
+                        })
+                    .lk-address__name
+                        span  Дмитровский офис
+                        span 
+                            +svg({
+                                name: 'edit'
+                            })
+                    .lk-address__location 
+                        span 127540, Москва, ул Дмитровское шоссе, дом 17, офис 78
         .lk__history.lk-history
+            .lk-fade__text
+                span История заказов
             .lk-history__title
-                span Сохраненные адреса
+                span История заказов
             ul.lk-history__list
                 li.lk-history__item
                     .lk-history__date
@@ -132,6 +227,56 @@
                         span 15.06.2020
                     .lk-history__number
                         span  865578
+                    .lk-history__location 
+                        span 127540, Москва, ул Дмитровское шоссе, дом 17, офис 78
+                    .lk-history__price
+                        span 32 656
+                        span Р
+                    .lk-history__btn
+                        span  Повторить заказ
+        .lk-mobile__history
+            ul.lk-history__list
+                li.lk-history__item
+                    .lk-history__number
+                        span  865578
+                    .lk-history__date
+                        span 15.06.2020
+                    .lk-history__location 
+                        span 127540, Москва, ул Дмитровское шоссе, дом 17, офис 78
+                    .lk-history__price
+                        span 32 656
+                        span Р
+                    .lk-history__btn
+                        span  Повторить заказ
+                li.lk-history__item
+                    .lk-history__number
+                        span  865578
+                    .lk-history__date
+                        span 15.06.2020
+                    .lk-history__location 
+                        span 127540, Москва, ул Дмитровское шоссе, дом 17, офис 78
+                    .lk-history__price
+                        span 32 656
+                        span Р
+                    .lk-history__btn
+                        span  Повторить заказ
+                li.lk-history__item
+                    .lk-history__number
+                        span  865578
+                    .lk-history__date
+                        span 15.06.2020
+                    .lk-history__location 
+                        span 127540, Москва, ул Дмитровское шоссе, дом 17, офис 78
+                    .lk-history__price
+                        span 32 656
+                        span Р
+                    .lk-history__btn
+                        span  Повторить заказ
+                li.lk-history__item
+                    .lk-history__number
+                        span  865578
+                    .lk-history__date
+                        span 15.06.2020
                     .lk-history__location 
                         span 127540, Москва, ул Дмитровское шоссе, дом 17, офис 78
                     .lk-history__price

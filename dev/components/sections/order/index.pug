@@ -1,6 +1,5 @@
 .order
     .container
-        
         .order__title
             span Оформление заказа
         .order__box
@@ -23,9 +22,9 @@
             .order__delivery.order-delivery
                 .basket__subtitle
                     span Способ доставки
-                .order-delivery__btn
+                .order-delivery__btn.order-delivery__choice
                     span Доставка
-                .order-delivery__pickup
+                .order-delivery__pickup.order-delivery__choice
                     span Самовывоз
         .order-center
             .order__address.order-address
@@ -68,5 +67,20 @@
         .order-bottom
             include ../../blocks/payment-method/index.pug
             include ../../blocks/comment/index.pug
-        
-                
+    .order-bottom__fixed
+        .order-bottom__btn
+            span Оформить заказ
+    .order-mobile__message
+        .message-back__btn
+            span.mobile-back__close
+                +svg({
+                    name: 'breadcrumb-arrow'
+                })
+            span Личный кабинет
+        .order-mobile__title
+            span Заказ успешно Оформление
+        .order-mobile__subtitle
+            span Номер вашего заказа 
+            span 458796
+        .order-mobile__text
+            span  Наш менеджер свяжется с вами в ближайшее время для подтверждения заказа

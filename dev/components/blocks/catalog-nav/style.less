@@ -5,6 +5,7 @@
     top: 0;
     left: 0;
     padding-right: 18px;
+    position: relative;
     &__title{
         font-style: normal;
         font-weight: bold;
@@ -30,6 +31,10 @@
         color: #4F4F4F;
         text-decoration: none;
         cursor: pointer;
+        transition: all 0.34s ease-in;
+        &:hover{
+            color: #198772;
+        }
     }
     &__subfilter{
         font-style: normal;
@@ -42,9 +47,29 @@
         color: #4F4F4F;
         text-decoration: none;
         cursor: pointer;
+        position: relative;
+        &:before{
+            content: '';
+            position: absolute;
+            left: -17px;
+            top: 11px;
+            border-radius: 50%;
+            background-color:#198772;
+            width: 5px;
+            height: 5px;
+            opacity: 0;
+        }
+        &:hover{
+            color: #198772;
+            text-decoration: underline;
+            &:before{
+                opacity: 1;
+            }
+        }
     }
     &__subitem{
         list-style-type: disc;
+        
     }
     &__item{
         margin-bottom: 10px;
@@ -111,6 +136,7 @@
     &__clear{
         color: #E0E0E0;
         margin-bottom: 22px;
+        margin-top: 20px;
         & span{
             border-bottom: 1px solid #E0E0E0    ;
         }
@@ -124,7 +150,49 @@
     }
 
 }
-
+.catalog-nav__filter_active{
+    color: #198772;
+    font-weight: bold;
+}
 .catalog{
     position: relative;
+}
+.catalog-mobile{
+    display: none;
+}
+
+@media (max-width: 1024px ) {
+    .catalog-mobile{
+        display: block;
+        & .category__item{
+            width: 49%;
+            margin-bottom: 20px;
+            &:last-child{
+                margin-bottom: 0px;
+                padding-bottom: 0px;
+            }
+        }
+    }
+    .catalog-bg{
+        display: none;
+    }
+    .catalog-nav{
+        display: none;
+    }
+    .catalog-box{
+        display: none;
+    }
+   
+}
+@media (max-width: 768px) {
+    .catalog-mobile{
+        & .category__item{
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    }
+}
+@media (max-width: 600px) {
+
+
 }

@@ -2,6 +2,7 @@
     display: none;
     background: #EA6D56;
     height: 50px;
+    z-index: 2;
 }
 .mobile-nav{
     height: 50px;
@@ -25,14 +26,16 @@
         }
     }
     &__search{
-        background: #198772;
-        box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.25);
-        clip-path: polygon(12% 0, 88% 0, 100% 50%, 88% 100%, 12% 100%, 0% 50%);
         & svg{
             width: 21px;
             height: 21px;
         }
     }
+}
+.mobile-nav__item_active{
+    background: #198772;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.25);
+    clip-path: polygon(12% 0, 88% 0, 100% 50%, 88% 100%, 12% 100%, 0% 50%);    
 }
 @media (max-width: 1024px) {
     .section_navigation{

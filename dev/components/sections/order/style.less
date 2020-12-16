@@ -49,6 +49,11 @@
         max-width: 394px;
         width: 100%;
         margin-bottom: 20px;
+        &:hover{
+            & input{
+                border: 1px solid black;
+            }
+        }
         & input{
             height: 100%;
             width: 100%;
@@ -58,6 +63,12 @@
             font-size: 16px;
             line-height: 19px;
             color: #C4C4C4;
+            border: 1px solid transparent;
+            transition: all 0.34s ease-in;
+            border-radius: 5px;
+            &:focus{
+                border: 1px solid black;
+            }
         }
     }
 }
@@ -77,20 +88,27 @@
         &__btn{
             margin-top: 17px;
             font-style: normal;
-            font-weight: bold;
+            font-weight: normal;
             font-size: 16px;
             line-height: 26px;
             /* identical to box height, or 162% */
             display: flex;
             align-items: center;
-            color: #FFFFFF;
-            background: #198772;
+            color: #4f4f4f;
+            background: #ffffff;
             box-shadow: 0px 3px 5px rgba(16, 85, 72, 0.1);
             border-radius: 5px;
             height: 50px;
             display: flex;
             justify-content: center;
             align-items: center;
+            transition: all 0.34s ease-in;
+            cursor: pointer;
+            &:hover{
+                background: #198772;
+                color: white;
+            }
+            
         }
         &__pickup{
             background: #FFFFFF;
@@ -109,8 +127,37 @@
             justify-content: center;
             align-items: center;
             margin-top: 20px;
+            transition: all 0.34s ease-in;
+            cursor: pointer;
+            &:hover{
+                background: #198772;
+                color: white;
+            }
         }
     }
+}
+.order-time__btn{
+    cursor: pointer;
+    transition: all 0.34s ease-in;
+}
+.order-time__btn.order-time__btn_select{
+    transition: all 0.34s ease-in;
+    background: #198772;
+    box-shadow: 0px 3px 5px rgba(16, 85, 72, 0.1);
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    & span{
+        color: white;
+        font-weight: 600;
+    }
+}
+.order-delivery__choice_select{
+    background: #198772;
+    box-shadow: 0px 3px 5px rgba(16, 85, 72, 0.1);
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
 }
 .order-address{
     max-width: 455px;
@@ -136,9 +183,18 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        transition: all 0.34s ease-in;
         &:nth-child(4){
             max-height: 105px;
             height: 100%;
+        }
+        &:hover{
+            & input{
+                border:  1px solid black;
+            }
+            & textarea{
+                border:  1px solid black;
+            }
         }
         & textarea{
             width: 100%;
@@ -148,6 +204,11 @@
             border-radius: 5px;
             resize: none;
             padding: 16px 20px;
+            border: 1px solid transparent;
+            transition: all 0.34s ease-in;
+            &:focus{
+                border:  1px solid black;
+            }
         }
         & input{
             background: #FFFFFF;
@@ -156,6 +217,11 @@
             width: 100%;
             height: 100%;
             padding-left: 20px;
+            border:  1px solid transparent;
+            transition: all 0.34s ease-in;
+            &:focus{
+                border:  1px solid black;
+            }
         }
         &_mini{
             display: flex;
@@ -165,6 +231,7 @@
             & input{
                 max-width: 118px;
                 width: 100%;
+                transition: all 0.34s ease-in;
             }
             & .order-address__input{
                 max-width: 118px;
@@ -245,7 +312,37 @@
 
     }
 }
-
+.order-address__select {
+    &:hover{
+        & svg{
+            fill: #198772;
+        }
+        & span:nth-child(2){
+            color: #198772;
+            border-bottom: 1px solid #198772;
+        }
+    }
+}
+.payment-method__item.payment-method__item_select{
+    background:#198772;
+}
+.payment-method__item{
+    cursor: pointer;
+    transition: all 0.34s ease-in;
+}
+.payment-method__item:hover{
+    background-color:#198772;
+}
+.order-address__select span{
+    cursor: pointer;
+    transition: all 0.34s ease-in;
+    & svg{
+        width: 13px;
+        height: 17px;
+        transition: all 0.34s ease-in;
+        fill: #EA6D56;
+    }
+}
 // календарь
 .datepicker{
     width: 343px;
@@ -325,4 +422,438 @@
     border: 1px solid #F2F2F2;
     box-sizing: border-box;
     border-radius: 4px;
+}
+.order-bottom__fixed{
+    display: none;
+}
+.order-time__btn .order-time__btn_active{
+    background: #198772;
+    box-shadow: 0px 3px 5px rgba(16, 85, 72, 0.1);
+    border-radius: 5px;
+}
+.comment__textarea{
+    & textarea{
+        border: 1px solid transparent;
+        &:focus{
+            border: 1px solid black;
+        }
+    }
+    &:hover{
+        & textarea{
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+    }
+}
+.order-mobile__message{
+    display: none;
+}
+.order-center{
+    align-items: flex-start;
+}
+@media (max-width: 1170px){
+    .order-personal{
+        max-width: 800px;
+        &__item{
+            max-width: 330px;
+        }
+    }
+}
+@media (max-width: 1024px) {
+    .order__box{
+        flex-direction: column;
+        width: 100%;
+    }
+    .order__personal{
+        width: 100%;
+        max-width: unset;
+       
+    }
+    .order-personal{
+        &__item{
+            max-width: 49%;
+            width: 49%;
+        }
+        &__input{
+            max-width: 100%;
+        }
+    }
+    .order__delivery{
+        max-width: unset;
+        width: 100%;
+    }
+    .order-center{
+        flex-direction: column;
+    }
+    .order__address{
+        width: 100%;
+        max-width: unset;
+    }
+    .order-address{
+        &__input{
+            width: 100%;
+            max-width: unset;
+        }
+    }
+    .order-time{
+        max-width: unset;
+    }
+    .order-bottom{
+        flex-wrap: wrap;
+    }
+    .payment-method{
+        max-width: 100%;
+    }
+    .comment{
+        max-width: 100%;
+    }
+    .comment__textarea{
+        max-width: 100%;
+    }
+    .order-address__input_mini{
+        & .order-address__input{
+            max-width: 33%;
+            & input{
+                max-width: unset;
+            }
+        }
+    }
+    .payment-method__item{
+        max-width: 300px;
+        width: 100%;
+    }
+    .order-time__btn{
+        width: 250px;
+    }
+}
+@media (max-width: 768px) {
+    .order-bottom{
+        display: none;
+    }
+    .order-bottom__fixed{
+        display: block;
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #FFFFFF;
+        box-shadow: 0px -5px 10px rgba(14, 73, 62, 0.03);
+        position: fixed;
+        bottom: 50px;
+        z-index: 2;
+    }
+    .order-bottom__btn{
+        width: 180px;
+        height: 40px;
+        background: #198772;
+        box-shadow: 5px 5px 10px rgba(17, 82, 70, 0.1);
+        border-radius: 5px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 26px;
+        /* identical to box height, or 186% */
+        color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .order__title{
+        display: none;
+    }
+    .order{
+        margin-top: 10px;
+        &__personal{
+            padding: 20px 10px;
+        }
+        &__delivery{
+            padding: 20px 64px;
+        }
+        &__address{
+            padding: 20px 10px;
+            margin-bottom: 10px;
+        }
+    }
+    .basket__subtitle{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .order-delivery__pickup{
+        margin-top: 10px;
+    }
+    .order-center{
+        margin-top: 10px;
+    }
+    .order-address__title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .order-address__select{
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .order-address{
+        height: 100%;
+    }
+    .order-time{
+        flex-wrap: wrap;
+        height: 100%;
+        padding: 20px 10px;
+    }
+    // .order__time{
+    //     flex-wrap: wrap;
+    // }
+    .order-time__box{
+        width: 100%;
+    }
+    .order-time__left{
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        & .order-time__btn{
+            width: 100%;
+            max-width: calc(~'50% - 5px');
+            margin-right: 10px;
+            &:nth-child(2n+2){
+                margin-right: 0px;
+            }
+        }
+    }
+    .order-time__right{
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .order-address__input_mini .order-address__input{
+        width: 31%;
+    }
+    .order__box{
+        background-color: transparent;
+    }
+    .order-time__title{
+        text-align: center;
+    }
+    .order-delivery{
+        height: 100%;
+    }
+}
+@media (max-width: 600px) {
+    .order-personal__item{
+        max-width: 100%;
+        width: 100%;
+        &:last-child{
+            & .order-personal__input{
+                margin-bottom: 0px;
+            }
+        }
+    }
+    .order-personal{
+        height: 100%;
+    }
+    .order-address__input{
+        & input{
+            text-align: center;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+        & textarea{
+            height: 50px;
+            text-align: center;
+        }
+    }
+    .order-time__left{
+        margin-bottom: 20px;
+    }
+    .order-mobile__message{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        &_open{
+            display: block;
+            width: 100%;
+            position: fixed;
+            top: 50px;
+            bottom: 50px;
+            background: white;
+            padding-left: 12px;
+            padding-right: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .order-mobile__title{
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 22px;
+            /* identical to box height */
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            color: #4F4F4F;
+        }
+        .order-mobile__subtitle{
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 17px;
+            /* identical to box height */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #4F4F4F;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            & span:nth-child(2){
+                color: #EA6D56;
+            }
+        }
+        .order-mobile__text{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: #4F4F4F;
+        }
+    }
+}
+@media (max-width: 360px) {
+    .basket__subtitle{
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        /* identical to box height */
+        display: flex;
+        align-items: center;
+        color: #4F4F4F;
+    }
+    .order-personal__input{
+        height: 40px;
+    }
+    .order-personal__input input{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 15px;
+        /* identical to box height */
+        display: flex;
+        align-items: center;
+        color: #C4C4C4;
+        text-align: center;
+        padding-right: 20px;
+        height: 40px;
+    }
+    .order__delivery{
+        margin-top: 10px;
+    }
+    .basket__subtitle{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        /* identical to box height */
+        color: #4F4F4F;
+    }
+    .order-address__title{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        /* identical to box height */
+        color: #4F4F4F;
+    }
+    .order-time__title{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        /* identical to box height */
+        color: #4F4F4F;
+    }
+    .datepicker{
+        width: 294px;
+        height: 100%;
+    }
+    .datepicker--cell{
+        width: 38px;
+        height: 38px;
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .datepicker--nav-title, .datepicker--nav-title i{
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .datepicker--nav-action{
+        width: 44px;
+        height: 44px;
+    }
+    .order-address__input textarea{
+        height: 40px;
+        padding-top: 14px;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+    .order-address__input:nth-child(4){
+        height: 40px;
+    }
+    .order-address__input{
+        font-size: 12px;
+        line-height: 15px;
+        /* identical to box height */
+        color: #C4C4C4;
+        text-align: center;
+        & input{
+            text-align: center;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+    }
+    .order-address__select span{
+        & svg{
+            width: 10px;
+            height: 14px;
+        }
+    }
+    .order-address__select span:nth-child(2){
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 15px;
+        /* identical to box height */
+        color: #EA6D56;
+    }
+    .order-address__input{
+        margin-top: 10px;
+    }
+    .order-address__input{
+        margin-top: 10px;
+    }
+    .order-address__input_mini{
+        margin-bottom: 10px;
+    }
+    .order-time__right{
+        margin-top: 10px;
+    }
+}
+@media (max-width: 340px){
+    .order__delivery{
+        padding: 10px 20px;
+    }
 }

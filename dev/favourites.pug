@@ -13,9 +13,10 @@ include components/head/index.pug
 html(lang=global.lang)
     head
         +head(pageSettings)
-    body.page
+    body.page.page_favorites
         include components/header/index.pug
         main.main
+            include components/sections/mobile-nav/index.pug
             include components/sections/favourites/index.pug
         include components/footer/index.pug
 

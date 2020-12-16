@@ -13,11 +13,11 @@ include components/head/index.pug
 html(lang=global.lang)
     head
         +head(pageSettings)
-    body.page
+    body.page.page_basket
         include components/header/index.pug
         main.main
-            
+            include components/sections/mobile-nav/index.pug
             include components/sections/basket/index.pug
-            include components/sections/order/index.pug
+            //- include components/sections/order/index.pug
         include components/footer/index.pug
 

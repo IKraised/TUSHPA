@@ -13,10 +13,9 @@ include components/head/index.pug
 html(lang=global.lang)
     head
         +head(pageSettings)
-    body.page.page_lk
+    body.page.page_order
         include components/header/index.pug
-        main.main
+        main.main            
+            include components/sections/order/index.pug
             include components/sections/mobile-nav/index.pug
-            include components/sections/lk/index.pug
         include components/footer/index.pug
-

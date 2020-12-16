@@ -59,5 +59,34 @@ footer.footer
                             input(type="text")
                         .footer__btn
                             span Заказать
+.modal-container
+    .modal(data-modal="login" class="modal__login")
+        .btn-nav__menu
+            li.breadcrumbs__item
+                span 
+                    +svg({
+                        name: 'breadcrumb-arrow'
+                    })
+                span  Избранное
+        .modal__box
+            .modal__title
+                span Войти
+            .modal__input
+                input(type="text")
+            .modal__input
+                input(type="text")
+            .modal__hints
+                a.modal__remember
+                    label
+                        span.modal__checkbox
+                            input(type="checkbox")
+                            +svg({
+                                name: 'checkbox-active'
+                            })
+                        span Запомнить меня
+                a.modal__forgotten
+                    span Забыли пароль?
+            .modal__btn
+                span Войти
 script(src="js/libs.js")
 script(src="js/script.js")

@@ -7,20 +7,20 @@
     <link rel="stylesheet" href="css/style.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
   </head>
-  <body class="page">
+  <body class="page page_lk">
     <header class="header">
       <div class="container">
         <div class="header__top">
           <div class="header__city"> <span>Москва</span></div>
           <div class="header__tel"><a href="tel:+74958769834">+7 (495)-876-98-34</a></div>
-          <div class="header__login">
+          <div class="header__login" data-modal-open="login">
             <svg>
               <use xlink:href="img/symbols.svg#svg-user"></use>
             </svg>
           </div>
         </div>
         <div class="header__main">
-          <div class="header__logo"><img src="img/logo.png" alt=""/></div>
+          <div class="header__logo"><a href="/"><img src="img/logo.png" alt=""/></a></div>
           <div class="header__search">
             <div class="header__search-input">
               <input type="text"/>
@@ -68,6 +68,7 @@
             <svg>
               <use xlink:href="img/symbols.svg#svg-fav"></use>
             </svg>
+            <div class="header__quantity"><span>122</span></div>
           </div>
           <div class="header__cart"><span>
               <svg>
@@ -131,17 +132,17 @@
           </div>
         </div>
         <div class="header-mobail">
-          <div class="header__login"><img src="img/logo-mobile.png" alt=""/></div>
+          <div class="header__login"><a href="/"><img src="img/logo-mobile.png" alt=""/></a></div>
         </div>
       </div>
     </header>
     <div class="header-nav">
       <div class="container">
         <ul class="header-nav__list">
-          <li class="header-nav__item"><a class="header-nav__link" href="#">Категории</a><svg width="41" height="21" viewBox="0 0 41 21" fill="none" xmlns="http://www.w3.org/2000/svg" class="cat-mini__decor">
+          <li class="header-nav__item"><a class="header-nav__link" href="#">Категории</a>
+            <div class="nav-mobile__box"><svg width="41" height="21" viewBox="0 0 41 21" fill="none" xmlns="http://www.w3.org/2000/svg" class="cat-mini__decor">
 <path d="M0.402344 21V21C2.02406 21 3.56314 20.2135 4.50053 18.8901L15.9262 2.76008C17.9189 -0.0531069 22.0937 -0.0530879 24.0864 2.76011L35.5118 18.8901C36.4492 20.2135 37.9702 21 39.5919 21H40.0063H0.402344Z"/>
 </svg>
-            <div class="nav-mobile__box">
               <ul class="nav-mobile__list">
                 <li class="main-nav__item"><a class="main-nav__link" href="javascript:void(0);">Кондитерские изделия</a></li>
                 <li class="main-nav__item"><a class="main-nav__link" href="javascript:void(0);">Молочная продукция</a></li>
@@ -153,10 +154,10 @@
               </ul>
             </div>
           </li>
-          <li class="header-nav__item"><a class="header-nav__link" href="#">Акции</a><svg width="41" height="21" viewBox="0 0 41 21" fill="none" xmlns="http://www.w3.org/2000/svg" class="cat-mini__decor">
+          <li class="header-nav__item"><a class="header-nav__link" href="#">Акции</a>
+            <div class="nav-mobile__box"><svg width="41" height="21" viewBox="0 0 41 21" fill="none" xmlns="http://www.w3.org/2000/svg" class="cat-mini__decor">
 <path d="M0.402344 21V21C2.02406 21 3.56314 20.2135 4.50053 18.8901L15.9262 2.76008C17.9189 -0.0531069 22.0937 -0.0530879 24.0864 2.76011L35.5118 18.8901C36.4492 20.2135 37.9702 21 39.5919 21H40.0063H0.402344Z"/>
 </svg>
-            <div class="nav-mobile__box">
               <ul class="nav-mobile__list">
                 <li class="main-nav__item"><a class="main-nav__link" href="javascript:void(0);">Кондитерские изделия</a></li>
                 <li class="main-nav__item"><a class="main-nav__link" href="javascript:void(0);">Молочная продукция</a></li>
@@ -168,10 +169,10 @@
               </ul>
             </div>
           </li>
-          <li class="header-nav__item"><a class="header-nav__link" href="#">О компании</a><svg width="41" height="21" viewBox="0 0 41 21" fill="none" xmlns="http://www.w3.org/2000/svg" class="cat-mini__decor">
+          <li class="header-nav__item"><a class="header-nav__link" href="#">О компании</a>
+            <div class="nav-mobile__box"><svg width="41" height="21" viewBox="0 0 41 21" fill="none" xmlns="http://www.w3.org/2000/svg" class="cat-mini__decor">
 <path d="M0.402344 21V21C2.02406 21 3.56314 20.2135 4.50053 18.8901L15.9262 2.76008C17.9189 -0.0531069 22.0937 -0.0530879 24.0864 2.76011L35.5118 18.8901C36.4492 20.2135 37.9702 21 39.5919 21H40.0063H0.402344Z"/>
 </svg>
-            <div class="nav-mobile__box">
               <ul class="nav-mobile__list">
                 <li class="main-nav__item"><a class="main-nav__link" href="javascript:void(0);">Кондитерские изделия</a></li>
                 <li class="main-nav__item"><a class="main-nav__link" href="javascript:void(0);">Молочная продукция</a></li>
@@ -183,10 +184,10 @@
               </ul>
             </div>
           </li>
-          <li class="header-nav__item"><a class="header-nav__link" href="#">Доставка</a><svg width="41" height="21" viewBox="0 0 41 21" fill="none" xmlns="http://www.w3.org/2000/svg" class="cat-mini__decor">
+          <li class="header-nav__item"><a class="header-nav__link" href="#">Доставка</a>
+            <div class="nav-mobile__box"><svg width="41" height="21" viewBox="0 0 41 21" fill="none" xmlns="http://www.w3.org/2000/svg" class="cat-mini__decor">
 <path d="M0.402344 21V21C2.02406 21 3.56314 20.2135 4.50053 18.8901L15.9262 2.76008C17.9189 -0.0531069 22.0937 -0.0530879 24.0864 2.76011L35.5118 18.8901C36.4492 20.2135 37.9702 21 39.5919 21H40.0063H0.402344Z"/>
 </svg>
-            <div class="nav-mobile__box">
               <ul class="nav-mobile__list">
                 <li class="main-nav__item"><a class="main-nav__link" href="javascript:void(0);">Кондитерские изделия</a></li>
                 <li class="main-nav__item"><a class="main-nav__link" href="javascript:void(0);">Молочная продукция</a></li>
@@ -198,10 +199,10 @@
               </ul>
             </div>
           </li>
-          <li class="header-nav__item"><a class="header-nav__link" href="#">Оплата</a><svg width="41" height="21" viewBox="0 0 41 21" fill="none" xmlns="http://www.w3.org/2000/svg" class="cat-mini__decor">
+          <li class="header-nav__item"><a class="header-nav__link" href="#">Оплата</a>
+            <div class="nav-mobile__box"><svg width="41" height="21" viewBox="0 0 41 21" fill="none" xmlns="http://www.w3.org/2000/svg" class="cat-mini__decor">
 <path d="M0.402344 21V21C2.02406 21 3.56314 20.2135 4.50053 18.8901L15.9262 2.76008C17.9189 -0.0531069 22.0937 -0.0530879 24.0864 2.76011L35.5118 18.8901C36.4492 20.2135 37.9702 21 39.5919 21H40.0063H0.402344Z"/>
 </svg>
-            <div class="nav-mobile__box">
               <ul class="nav-mobile__list">
                 <li class="main-nav__item"><a class="main-nav__link" href="javascript:void(0);">Кондитерские изделия</a></li>
                 <li class="main-nav__item"><a class="main-nav__link" href="javascript:void(0);">Молочная продукция</a></li>
@@ -213,10 +214,10 @@
               </ul>
             </div>
           </li>
-          <li class="header-nav__item"><a class="header-nav__link" href="#">Прайс-лист</a><svg width="41" height="21" viewBox="0 0 41 21" fill="none" xmlns="http://www.w3.org/2000/svg" class="cat-mini__decor">
+          <li class="header-nav__item"><a class="header-nav__link" href="#">Прайс-лист</a>
+            <div class="nav-mobile__box"><svg width="41" height="21" viewBox="0 0 41 21" fill="none" xmlns="http://www.w3.org/2000/svg" class="cat-mini__decor">
 <path d="M0.402344 21V21C2.02406 21 3.56314 20.2135 4.50053 18.8901L15.9262 2.76008C17.9189 -0.0531069 22.0937 -0.0530879 24.0864 2.76011L35.5118 18.8901C36.4492 20.2135 37.9702 21 39.5919 21H40.0063H0.402344Z"/>
 </svg>
-            <div class="nav-mobile__box">
               <ul class="nav-mobile__list">
                 <li class="main-nav__item"><a class="main-nav__link" href="javascript:void(0);">Кондитерские изделия</a></li>
                 <li class="main-nav__item"><a class="main-nav__link" href="javascript:void(0);">Молочная продукция</a></li>
@@ -228,10 +229,10 @@
               </ul>
             </div>
           </li>
-          <li class="header-nav__item"><a class="header-nav__link" href="#">Контакты</a><svg width="41" height="21" viewBox="0 0 41 21" fill="none" xmlns="http://www.w3.org/2000/svg" class="cat-mini__decor">
+          <li class="header-nav__item"><a class="header-nav__link" href="#">Контакты</a>
+            <div class="nav-mobile__box"><svg width="41" height="21" viewBox="0 0 41 21" fill="none" xmlns="http://www.w3.org/2000/svg" class="cat-mini__decor">
 <path d="M0.402344 21V21C2.02406 21 3.56314 20.2135 4.50053 18.8901L15.9262 2.76008C17.9189 -0.0531069 22.0937 -0.0530879 24.0864 2.76011L35.5118 18.8901C36.4492 20.2135 37.9702 21 39.5919 21H40.0063H0.402344Z"/>
 </svg>
-            <div class="nav-mobile__box">
               <ul class="nav-mobile__list">
                 <li class="main-nav__item"><a class="main-nav__link" href="javascript:void(0);">Кондитерские изделия</a></li>
                 <li class="main-nav__item"><a class="main-nav__link" href="javascript:void(0);">Молочная продукция</a></li>
@@ -246,8 +247,103 @@
         </ul>
       </div>
     </div>
+    <div class="breadcrumb__mobile">
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__item"><span> 
+            <svg>
+              <use xlink:href="img/symbols.svg#svg-breadcrumb-arrow"></use>
+            </svg></span><span> Избранное</span></li>
+      </ul>
+    </div>
+    <div class="navigation-mobile">
+      <div class="navigation-mobile__back btn-close__menu">
+        <li class="breadcrumbs__item"><span> 
+            <svg>
+              <use xlink:href="img/symbols.svg#svg-breadcrumb-arrow"></use>
+            </svg></span><span> Избранное</span></li>
+      </div>
+      <ul class="navigation-mobile__list">
+        <li class="navigation-mobile__item"><a class="navigation-mobile__link" href="#">Категории</a></li>
+        <li class="navigation-mobile__item"><a class="navigation-mobile__link" href="#">Акции</a></li>
+        <li class="navigation-mobile__item"><a class="navigation-mobile__link" href="#">О компании</a></li>
+        <li class="navigation-mobile__item"><a class="navigation-mobile__link" href="#">Доставка</a></li>
+        <li class="navigation-mobile__item"><a class="navigation-mobile__link" href="#">Оплата</a></li>
+        <li class="navigation-mobile__item"><a class="navigation-mobile__link" href="#">Прайс-лист</a></li>
+        <li class="navigation-mobile__item"><a class="navigation-mobile__link" href="#">Контакты</a></li>
+        <li class="navigation-mobile__item"><a class="navigation-mobile__link" href="#">Избранное</a></li>
+      </ul>
+      <div class="navigation-mobile__box">
+        <div class="navigation-mobile__left">
+          <div class="navigation-mobile__phone"><span>
+              <svg>
+                <use xlink:href="img/symbols.svg#svg-tel"></use>
+              </svg></span><span>+7 (495)-876-98-34</span></div>
+          <div class="navigation-mobile__email"><span>
+              <svg>
+                <use xlink:href="img/symbols.svg#svg-email"></use>
+              </svg></span><span>tushpa@info.ru</span></div>
+          <div class="navigation-mobile__city"><span> </span><span>Москва</span></div>
+        </div>
+        <div class="navigation-mobile__right">
+          <div class="navigation-mobile__whatsapp">
+            <svg>
+              <use xlink:href="img/symbols.svg#svg-whatsapp"></use>
+            </svg>
+          </div>
+          <div class="navigation-mobile__logo"><img src="img/logo-footer.png" alt=""></div>
+        </div>
+      </div>
+    </div>
     <main class="main">
+      <div class="section section_navigation">
+        <div class="mobile-nav">
+          <ul class="mobile-nav__list">
+            <li class="mobile-nav__item">
+              <div class="mobile-nav__link">
+                <svg>
+                  <use xlink:href="img/symbols.svg#svg-home"></use>
+                </svg>
+              </div>
+            </li>
+            <li class="mobile-nav__item">
+              <div class="mobile-nav__link">
+                <svg>
+                  <use xlink:href="img/symbols.svg#svg-cart"></use>
+                </svg>
+              </div>
+            </li>
+            <li class="mobile-nav__item mobile-nav__item_active">
+              <div class="mobile-nav__link mobile-nav__search">
+                <svg>
+                  <use xlink:href="img/symbols.svg#svg-search"></use>
+                </svg>
+              </div>
+            </li>
+            <li class="mobile-nav__item" data-modal-open="login">
+              <div class="mobile-nav__link">
+                <svg>
+                  <use xlink:href="img/symbols.svg#svg-user"></use>
+                </svg>
+              </div>
+            </li>
+            <li class="mobile-nav__item js-open-burger">
+              <div class="mobile-nav__link">
+                <svg>
+                  <use xlink:href="img/symbols.svg#svg-burger"></use>
+                </svg>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
       <div class="lk">
+        <div class="mobile-back__btn"><span class="mobile-back__btn-arrow">
+            <svg>
+              <use xlink:href="img/symbols.svg#svg-breadcrumb-arrow"></use>
+            </svg></span><span>Личный кабинет</span><span> 
+            <svg>
+              <use xlink:href="img/symbols.svg#svg-exit"></use>
+            </svg></span></div>
         <div class="container">
           <div class="catalog-box__top">
             <div class="breadcrumbs">
@@ -265,6 +361,7 @@
           </div>
           <div class="lk__title"> <span>Личный кабинет</span></div>
           <div class="lk__box">
+            <div class="lk-fade__text"><span>Личные данные</span></div>
             <div class="lk__data lk-data">
               <div class="lk-data__title"><span>Личные данные</span></div>
               <div class="lk-data__input">
@@ -281,20 +378,53 @@
               </div>
             </div>
             <div class="lk__password lk-password">
-              <div class="lk-pass"><span>Настройки пароля</span></div>
+              <div class="lk-passwort__title"><span>Настройки пароля</span></div>
               <div class="lk-password__input">
-                <input type="text" placeholder="ФИО"/>
+                <input type="text" placeholder="Текущий пароль"/>
               </div>
               <div class="lk-password__input">
-                <input type="text" placeholder="ФИО"/>
+                <input type="text" placeholder="Новый пароль"/>
               </div>
               <div class="lk-password__input">
-                <input type="text" placeholder="ФИО"/>
+                <input type="text" placeholder="Повторите новый пароль"/>
               </div>
               <div class="lk-password__btn"><span>Сохранить изменения</span></div>
             </div>
           </div>
+          <div class="lk-mobile__data">
+            <div class="lk__data lk-data">
+              <div class="lk-data__title"><span>Личные данные</span></div>
+              <div class="lk-data__input">
+                <input type="text" placeholder="ФИО"/>
+              </div>
+              <div class="lk-data__input">
+                <input type="text" placeholder="ФИО"/>
+              </div>
+              <div class="lk-data__input">
+                <input type="text" placeholder="ФИО"/>
+              </div>
+              <div class="lk-data__input">
+                <input type="text" placeholder="ФИО"/>
+              </div>
+            </div>
+            <div class="lk__password lk-password">
+              <div class="lk-password__title"><span>Настройки пароля</span></div>
+              <div class="lk-password__input">
+                <input type="text" placeholder="Текущий пароль"/>
+              </div>
+              <div class="lk-password__input">
+                <input type="text" placeholder="Новый пароль"/>
+              </div>
+              <div class="lk-password__input">
+                <input type="text" placeholder="Повторите новый пароль"/>
+              </div>
+            </div>
+            <div class="lk-save__btn">
+              <div class="lk-password__btn"><span>Сохранить изменения</span></div>
+            </div>
+          </div>
           <div class="lk__address lk-address">
+            <div class="lk-fade__text"><span>Сохраненные адреса</span></div>
             <div class="lk-address__title"><span>Сохраненные адреса</span></div>
             <ul class="lk-address__list">
               <li class="lk-address__item">
@@ -341,8 +471,61 @@
               </li>
             </ul>
           </div>
+          <div class="lk-mobile__address">
+            <ul class="lk-address__list">
+              <li class="lk-address__item">
+                <div class="lk-address__delete">
+                  <svg>
+                    <use xlink:href="img/symbols.svg#svg-cart-delete"></use>
+                  </svg>
+                </div>
+                <div class="lk-address__name"><span> Дмитровский офис</span><span> 
+                    <svg>
+                      <use xlink:href="img/symbols.svg#svg-edit"></use>
+                    </svg></span></div>
+                <div class="lk-address__location"> <span>127540, Москва, ул Дмитровское шоссе, дом 17, офис 78</span></div>
+              </li>
+              <li class="lk-address__item">
+                <div class="lk-address__delete">
+                  <svg>
+                    <use xlink:href="img/symbols.svg#svg-cart-delete"></use>
+                  </svg>
+                </div>
+                <div class="lk-address__name"><span> Дмитровский офис</span><span> 
+                    <svg>
+                      <use xlink:href="img/symbols.svg#svg-edit"></use>
+                    </svg></span></div>
+                <div class="lk-address__location"> <span>127540, Москва, ул Дмитровское шоссе, дом 17, офис 78</span></div>
+              </li>
+              <li class="lk-address__item">
+                <div class="lk-address__delete">
+                  <svg>
+                    <use xlink:href="img/symbols.svg#svg-cart-delete"></use>
+                  </svg>
+                </div>
+                <div class="lk-address__name"><span> Дмитровский офис</span><span> 
+                    <svg>
+                      <use xlink:href="img/symbols.svg#svg-edit"></use>
+                    </svg></span></div>
+                <div class="lk-address__location"> <span>127540, Москва, ул Дмитровское шоссе, дом 17, офис 78</span></div>
+              </li>
+              <li class="lk-address__item">
+                <div class="lk-address__delete">
+                  <svg>
+                    <use xlink:href="img/symbols.svg#svg-cart-delete"></use>
+                  </svg>
+                </div>
+                <div class="lk-address__name"><span> Дмитровский офис</span><span> 
+                    <svg>
+                      <use xlink:href="img/symbols.svg#svg-edit"></use>
+                    </svg></span></div>
+                <div class="lk-address__location"> <span>127540, Москва, ул Дмитровское шоссе, дом 17, офис 78</span></div>
+              </li>
+            </ul>
+          </div>
           <div class="lk__history lk-history">
-            <div class="lk-history__title"><span>Сохраненные адреса</span></div>
+            <div class="lk-fade__text"><span>История заказов</span></div>
+            <div class="lk-history__title"><span>История заказов</span></div>
             <ul class="lk-history__list">
               <li class="lk-history__item">
                 <div class="lk-history__date"><span>15.06.2020</span></div>
@@ -375,6 +558,38 @@
               <li class="lk-history__item">
                 <div class="lk-history__date"><span>15.06.2020</span></div>
                 <div class="lk-history__number"><span> 865578</span></div>
+                <div class="lk-history__location"> <span>127540, Москва, ул Дмитровское шоссе, дом 17, офис 78</span></div>
+                <div class="lk-history__price"><span>32 656</span><span>Р</span></div>
+                <div class="lk-history__btn"><span> Повторить заказ</span></div>
+              </li>
+            </ul>
+          </div>
+          <div class="lk-mobile__history">
+            <ul class="lk-history__list">
+              <li class="lk-history__item">
+                <div class="lk-history__number"><span> 865578</span></div>
+                <div class="lk-history__date"><span>15.06.2020</span></div>
+                <div class="lk-history__location"> <span>127540, Москва, ул Дмитровское шоссе, дом 17, офис 78</span></div>
+                <div class="lk-history__price"><span>32 656</span><span>Р</span></div>
+                <div class="lk-history__btn"><span> Повторить заказ</span></div>
+              </li>
+              <li class="lk-history__item">
+                <div class="lk-history__number"><span> 865578</span></div>
+                <div class="lk-history__date"><span>15.06.2020</span></div>
+                <div class="lk-history__location"> <span>127540, Москва, ул Дмитровское шоссе, дом 17, офис 78</span></div>
+                <div class="lk-history__price"><span>32 656</span><span>Р</span></div>
+                <div class="lk-history__btn"><span> Повторить заказ</span></div>
+              </li>
+              <li class="lk-history__item">
+                <div class="lk-history__number"><span> 865578</span></div>
+                <div class="lk-history__date"><span>15.06.2020</span></div>
+                <div class="lk-history__location"> <span>127540, Москва, ул Дмитровское шоссе, дом 17, офис 78</span></div>
+                <div class="lk-history__price"><span>32 656</span><span>Р</span></div>
+                <div class="lk-history__btn"><span> Повторить заказ</span></div>
+              </li>
+              <li class="lk-history__item">
+                <div class="lk-history__number"><span> 865578</span></div>
+                <div class="lk-history__date"><span>15.06.2020</span></div>
                 <div class="lk-history__location"> <span>127540, Москва, ул Дмитровское шоссе, дом 17, офис 78</span></div>
                 <div class="lk-history__price"><span>32 656</span><span>Р</span></div>
                 <div class="lk-history__btn"><span> Повторить заказ</span></div>
@@ -443,6 +658,32 @@
         </div>
       </div>
     </footer>
+    <div class="modal-container">
+      <div class="modal modal__login" data-modal="login">
+        <div class="btn-nav__menu">
+          <li class="breadcrumbs__item"><span> 
+              <svg>
+                <use xlink:href="img/symbols.svg#svg-breadcrumb-arrow"></use>
+              </svg></span><span> Избранное</span></li>
+        </div>
+        <div class="modal__box">
+          <div class="modal__title"><span>Войти</span></div>
+          <div class="modal__input">
+            <input type="text"/>
+          </div>
+          <div class="modal__input">
+            <input type="text"/>
+          </div>
+          <div class="modal__hints"><a class="modal__remember">
+              <label><span class="modal__checkbox">
+                  <input type="checkbox"/>
+                  <svg>
+                    <use xlink:href="img/symbols.svg#svg-checkbox-active"></use>
+                  </svg></span><span>Запомнить меня</span></label></a><a class="modal__forgotten"><span>Забыли пароль?</span></a></div>
+          <div class="modal__btn"><span>Войти</span></div>
+        </div>
+      </div>
+    </div>
     <script src="js/libs.js"></script>
     <script src="js/script.js"></script>
   </body>

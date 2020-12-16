@@ -5,13 +5,14 @@ header.header
                 span Москва
             .header__tel
                 a(href="tel:+74958769834") +7 (495)-876-98-34
-            .header__login
+            .header__login(data-modal-open="login")
                 +svg({
                     name: 'user'
                 })
         .header__main
             .header__logo
-                img(src="img/logo.png", alt="")
+                a(href="/")
+                    img(src="img/logo.png", alt="")
             .header__search
                 .header__search-input
                     input(type="text")
@@ -57,6 +58,8 @@ header.header
                 +svg({
                     name: 'fav'
                 })
+                .header__quantity
+                    span 122
             .header__cart
                 span
                     +svg({
@@ -123,6 +126,63 @@ header.header
                                     })
         .header-mobail
             .header__login
-                img(src="img/logo-mobile.png", alt="")
+                a(href="/")
+                    img(src="img/logo-mobile.png", alt="")
 include ../blocks/header-nav/index.pug
-
+.breadcrumb__mobile
+    ul.breadcrumbs__list
+        li.breadcrumbs__item
+            span 
+                +svg({
+                    name: 'breadcrumb-arrow'
+                })
+            span  Избранное
+.navigation-mobile
+    .navigation-mobile__back.btn-close__menu
+        li.breadcrumbs__item
+            span 
+                +svg({
+                    name: 'breadcrumb-arrow'
+                })
+            span  Избранное
+    ul.navigation-mobile__list
+        li.navigation-mobile__item
+            a(href="#").navigation-mobile__link Категории
+        li.navigation-mobile__item
+            a(href="#").navigation-mobile__link Акции
+        li.navigation-mobile__item
+            a(href="#").navigation-mobile__link О компании
+        li.navigation-mobile__item
+            a(href="#").navigation-mobile__link Доставка
+        li.navigation-mobile__item
+            a(href="#").navigation-mobile__link Оплата
+        li.navigation-mobile__item
+            a(href="#").navigation-mobile__link Прайс-лист
+        li.navigation-mobile__item
+            a(href="#").navigation-mobile__link Контакты
+        li.navigation-mobile__item
+            a(href="#").navigation-mobile__link Избранное
+    .navigation-mobile__box
+        .navigation-mobile__left
+            .navigation-mobile__phone
+                span
+                    +svg({
+                        name: 'tel'
+                    })
+                span +7 (495)-876-98-34
+            .navigation-mobile__email
+                span
+                    +svg({
+                        name: 'email'
+                    })
+                span tushpa@info.ru
+            .navigation-mobile__city
+                span 
+                span Москва
+        .navigation-mobile__right
+            .navigation-mobile__whatsapp
+                +svg({
+                    name: 'whatsapp'
+                })
+            .navigation-mobile__logo
+                <img src="img/logo-footer.png" alt="">

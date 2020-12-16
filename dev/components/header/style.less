@@ -6,6 +6,34 @@
         justify-content: flex-end;
         align-self: center;
     }
+    &__logo{
+        cursor: pointer;
+        transition: all 0.34s ease-in;
+        
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+    &__quantity{
+        padding: 4px;
+        background: #E65C45;
+        border-radius: 50px;
+        color: white;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 15px;
+        /* identical to box height */
+        color: #FFFFFF;
+        position: absolute;
+        top: -16px;
+        right: -25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 25px;
+        min-height: 25px;
+    }
     &__city{
         font-style: normal;
         font-weight: normal;
@@ -49,6 +77,9 @@
         align-items: center;
         margin-left: 29px;
         cursor: pointer;
+        & a{
+            cursor: pointer;
+        }
         & svg{
             width: 20px;
             height: 20px;
@@ -84,10 +115,21 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-left: 20px;
+        &:hover{
+            & input{
+                border: 1px solid black;
+            }
+        }
         & input{
+            border: 1px solid transparent;
+            padding-left: 20px;
+            transition: all 0.34s ease-in;
             height: 100%;
             width: 100%;
+            border-radius: 5px;
+            &:focus{
+                border: 1px solid black;
+            }
         }
     }
     &__search-btn{
@@ -141,6 +183,7 @@
         margin-left: 13px;
         transition:  all 0.34s ease;
         cursor: pointer;
+        position: relative;
         & svg{
             width: 34px;
             height: 30px;
@@ -156,6 +199,9 @@
 }
 .header-mobail{
     display: none;
+}
+.header__cart:hover .special-card__link svg{
+    fill: #EA6D56 ;
 }
 .cart-mini{
     display: none;
@@ -339,6 +385,11 @@
 .search-bar__cart:hover{
     background: #46AA97;
 }
+.breadcrumbs__item.header_fixed{
+    position: fixed;
+    top: 50px;
+    z-index: 3;
+}
 @media(max-width: 1024px) {
     .header-mobail{
         display: block;
@@ -356,5 +407,120 @@
     }
     .header__login{
         margin-left: 0px;
+    }
+    
+}
+.navigation-mobile{
+    position: fixed;
+    top: 50px;
+    bottom: 50px;
+    left: 0;
+    z-index: 3;
+    background: white;
+    width: 100%;
+    overflow-y: scroll;
+    padding-bottom: 10px;
+    display: none;
+    &.navigation-mobile_active{
+        display: block;
+    }
+    &__list{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    &__item{
+        background: #FFFFFF;
+        box-shadow: 0px 0px 10px rgba(17, 82, 70, 0.05);
+        border-radius: 5px;
+        height: 40px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+    &__link{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 15px;
+        /* identical to box height */
+        display: flex;
+        align-items: center;
+        color: #4F4F4F;
+        display: block;
+        text-decoration: none;
+    }
+    &__box{
+        background: #198772;
+        box-shadow: 0px 0px 10px rgba(17, 82, 70, 0.05);
+        border-radius: 5px;
+        margin: 10px;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    &__phone{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        /* identical to box height */
+        color: #FFFFFF;
+        margin-bottom: 10px;
+        & svg{
+            width: 10px;
+            height: 10px;
+            margin-right: 9px;
+        }
+    }
+    &__email{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        /* identical to box height */
+        color: #FFFFFF;
+        margin-bottom: 10px;
+        & svg{
+            width: 11px;
+            height: 9px;
+            margin-right: 9px;
+        }
+    }
+    &__city{
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        /* identical to box height */
+        display: flex;
+        align-items: center;
+        color: #FFFFFF;
+        text-decoration: underline;
+    }
+    &__whatsapp{
+        width: 20px;
+        height: 20px;
+        margin-bottom: 30px;
+        & svg{
+            width: 20px;
+            height: 20px;
+            fill: white;
+        }
+    }
+    &__right{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        flex-direction: column;
+    }
+    &__back{
+
+    }
+}
+@media (max-width: 420px) {
+    .nav-mobile__link{
+        font-size: 12px;
     }
 }

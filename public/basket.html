@@ -7,20 +7,20 @@
     <link rel="stylesheet" href="css/style.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
   </head>
-  <body class="page">
+  <body class="page page_basket">
     <header class="header">
       <div class="container">
         <div class="header__top">
           <div class="header__city"> <span>Москва</span></div>
           <div class="header__tel"><a href="tel:+74958769834">+7 (495)-876-98-34</a></div>
-          <div class="header__login">
+          <div class="header__login" data-modal-open="login">
             <svg>
               <use xlink:href="img/symbols.svg#svg-user"></use>
             </svg>
           </div>
         </div>
         <div class="header__main">
-          <div class="header__logo"><img src="img/logo.png" alt=""/></div>
+          <div class="header__logo"><a href="/"><img src="img/logo.png" alt=""/></a></div>
           <div class="header__search">
             <div class="header__search-input">
               <input type="text"/>
@@ -68,6 +68,7 @@
             <svg>
               <use xlink:href="img/symbols.svg#svg-fav"></use>
             </svg>
+            <div class="header__quantity"><span>122</span></div>
           </div>
           <div class="header__cart"><span>
               <svg>
@@ -131,17 +132,17 @@
           </div>
         </div>
         <div class="header-mobail">
-          <div class="header__login"><img src="img/logo-mobile.png" alt=""/></div>
+          <div class="header__login"><a href="/"><img src="img/logo-mobile.png" alt=""/></a></div>
         </div>
       </div>
     </header>
     <div class="header-nav">
       <div class="container">
         <ul class="header-nav__list">
-          <li class="header-nav__item"><a class="header-nav__link" href="#">Категории</a><svg width="41" height="21" viewBox="0 0 41 21" fill="none" xmlns="http://www.w3.org/2000/svg" class="cat-mini__decor">
+          <li class="header-nav__item"><a class="header-nav__link" href="#">Категории</a>
+            <div class="nav-mobile__box"><svg width="41" height="21" viewBox="0 0 41 21" fill="none" xmlns="http://www.w3.org/2000/svg" class="cat-mini__decor">
 <path d="M0.402344 21V21C2.02406 21 3.56314 20.2135 4.50053 18.8901L15.9262 2.76008C17.9189 -0.0531069 22.0937 -0.0530879 24.0864 2.76011L35.5118 18.8901C36.4492 20.2135 37.9702 21 39.5919 21H40.0063H0.402344Z"/>
 </svg>
-            <div class="nav-mobile__box">
               <ul class="nav-mobile__list">
                 <li class="main-nav__item"><a class="main-nav__link" href="javascript:void(0);">Кондитерские изделия</a></li>
                 <li class="main-nav__item"><a class="main-nav__link" href="javascript:void(0);">Молочная продукция</a></li>
@@ -153,10 +154,10 @@
               </ul>
             </div>
           </li>
-          <li class="header-nav__item"><a class="header-nav__link" href="#">Акции</a><svg width="41" height="21" viewBox="0 0 41 21" fill="none" xmlns="http://www.w3.org/2000/svg" class="cat-mini__decor">
+          <li class="header-nav__item"><a class="header-nav__link" href="#">Акции</a>
+            <div class="nav-mobile__box"><svg width="41" height="21" viewBox="0 0 41 21" fill="none" xmlns="http://www.w3.org/2000/svg" class="cat-mini__decor">
 <path d="M0.402344 21V21C2.02406 21 3.56314 20.2135 4.50053 18.8901L15.9262 2.76008C17.9189 -0.0531069 22.0937 -0.0530879 24.0864 2.76011L35.5118 18.8901C36.4492 20.2135 37.9702 21 39.5919 21H40.0063H0.402344Z"/>
 </svg>
-            <div class="nav-mobile__box">
               <ul class="nav-mobile__list">
                 <li class="main-nav__item"><a class="main-nav__link" href="javascript:void(0);">Кондитерские изделия</a></li>
                 <li class="main-nav__item"><a class="main-nav__link" href="javascript:void(0);">Молочная продукция</a></li>
@@ -168,10 +169,10 @@
               </ul>
             </div>
           </li>
-          <li class="header-nav__item"><a class="header-nav__link" href="#">О компании</a><svg width="41" height="21" viewBox="0 0 41 21" fill="none" xmlns="http://www.w3.org/2000/svg" class="cat-mini__decor">
+          <li class="header-nav__item"><a class="header-nav__link" href="#">О компании</a>
+            <div class="nav-mobile__box"><svg width="41" height="21" viewBox="0 0 41 21" fill="none" xmlns="http://www.w3.org/2000/svg" class="cat-mini__decor">
 <path d="M0.402344 21V21C2.02406 21 3.56314 20.2135 4.50053 18.8901L15.9262 2.76008C17.9189 -0.0531069 22.0937 -0.0530879 24.0864 2.76011L35.5118 18.8901C36.4492 20.2135 37.9702 21 39.5919 21H40.0063H0.402344Z"/>
 </svg>
-            <div class="nav-mobile__box">
               <ul class="nav-mobile__list">
                 <li class="main-nav__item"><a class="main-nav__link" href="javascript:void(0);">Кондитерские изделия</a></li>
                 <li class="main-nav__item"><a class="main-nav__link" href="javascript:void(0);">Молочная продукция</a></li>
@@ -183,10 +184,10 @@
               </ul>
             </div>
           </li>
-          <li class="header-nav__item"><a class="header-nav__link" href="#">Доставка</a><svg width="41" height="21" viewBox="0 0 41 21" fill="none" xmlns="http://www.w3.org/2000/svg" class="cat-mini__decor">
+          <li class="header-nav__item"><a class="header-nav__link" href="#">Доставка</a>
+            <div class="nav-mobile__box"><svg width="41" height="21" viewBox="0 0 41 21" fill="none" xmlns="http://www.w3.org/2000/svg" class="cat-mini__decor">
 <path d="M0.402344 21V21C2.02406 21 3.56314 20.2135 4.50053 18.8901L15.9262 2.76008C17.9189 -0.0531069 22.0937 -0.0530879 24.0864 2.76011L35.5118 18.8901C36.4492 20.2135 37.9702 21 39.5919 21H40.0063H0.402344Z"/>
 </svg>
-            <div class="nav-mobile__box">
               <ul class="nav-mobile__list">
                 <li class="main-nav__item"><a class="main-nav__link" href="javascript:void(0);">Кондитерские изделия</a></li>
                 <li class="main-nav__item"><a class="main-nav__link" href="javascript:void(0);">Молочная продукция</a></li>
@@ -198,10 +199,10 @@
               </ul>
             </div>
           </li>
-          <li class="header-nav__item"><a class="header-nav__link" href="#">Оплата</a><svg width="41" height="21" viewBox="0 0 41 21" fill="none" xmlns="http://www.w3.org/2000/svg" class="cat-mini__decor">
+          <li class="header-nav__item"><a class="header-nav__link" href="#">Оплата</a>
+            <div class="nav-mobile__box"><svg width="41" height="21" viewBox="0 0 41 21" fill="none" xmlns="http://www.w3.org/2000/svg" class="cat-mini__decor">
 <path d="M0.402344 21V21C2.02406 21 3.56314 20.2135 4.50053 18.8901L15.9262 2.76008C17.9189 -0.0531069 22.0937 -0.0530879 24.0864 2.76011L35.5118 18.8901C36.4492 20.2135 37.9702 21 39.5919 21H40.0063H0.402344Z"/>
 </svg>
-            <div class="nav-mobile__box">
               <ul class="nav-mobile__list">
                 <li class="main-nav__item"><a class="main-nav__link" href="javascript:void(0);">Кондитерские изделия</a></li>
                 <li class="main-nav__item"><a class="main-nav__link" href="javascript:void(0);">Молочная продукция</a></li>
@@ -213,10 +214,10 @@
               </ul>
             </div>
           </li>
-          <li class="header-nav__item"><a class="header-nav__link" href="#">Прайс-лист</a><svg width="41" height="21" viewBox="0 0 41 21" fill="none" xmlns="http://www.w3.org/2000/svg" class="cat-mini__decor">
+          <li class="header-nav__item"><a class="header-nav__link" href="#">Прайс-лист</a>
+            <div class="nav-mobile__box"><svg width="41" height="21" viewBox="0 0 41 21" fill="none" xmlns="http://www.w3.org/2000/svg" class="cat-mini__decor">
 <path d="M0.402344 21V21C2.02406 21 3.56314 20.2135 4.50053 18.8901L15.9262 2.76008C17.9189 -0.0531069 22.0937 -0.0530879 24.0864 2.76011L35.5118 18.8901C36.4492 20.2135 37.9702 21 39.5919 21H40.0063H0.402344Z"/>
 </svg>
-            <div class="nav-mobile__box">
               <ul class="nav-mobile__list">
                 <li class="main-nav__item"><a class="main-nav__link" href="javascript:void(0);">Кондитерские изделия</a></li>
                 <li class="main-nav__item"><a class="main-nav__link" href="javascript:void(0);">Молочная продукция</a></li>
@@ -228,10 +229,10 @@
               </ul>
             </div>
           </li>
-          <li class="header-nav__item"><a class="header-nav__link" href="#">Контакты</a><svg width="41" height="21" viewBox="0 0 41 21" fill="none" xmlns="http://www.w3.org/2000/svg" class="cat-mini__decor">
+          <li class="header-nav__item"><a class="header-nav__link" href="#">Контакты</a>
+            <div class="nav-mobile__box"><svg width="41" height="21" viewBox="0 0 41 21" fill="none" xmlns="http://www.w3.org/2000/svg" class="cat-mini__decor">
 <path d="M0.402344 21V21C2.02406 21 3.56314 20.2135 4.50053 18.8901L15.9262 2.76008C17.9189 -0.0531069 22.0937 -0.0530879 24.0864 2.76011L35.5118 18.8901C36.4492 20.2135 37.9702 21 39.5919 21H40.0063H0.402344Z"/>
 </svg>
-            <div class="nav-mobile__box">
               <ul class="nav-mobile__list">
                 <li class="main-nav__item"><a class="main-nav__link" href="javascript:void(0);">Кондитерские изделия</a></li>
                 <li class="main-nav__item"><a class="main-nav__link" href="javascript:void(0);">Молочная продукция</a></li>
@@ -246,22 +247,97 @@
         </ul>
       </div>
     </div>
+    <div class="breadcrumb__mobile">
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__item"><span> 
+            <svg>
+              <use xlink:href="img/symbols.svg#svg-breadcrumb-arrow"></use>
+            </svg></span><span> Избранное</span></li>
+      </ul>
+    </div>
+    <div class="navigation-mobile">
+      <div class="navigation-mobile__back btn-close__menu">
+        <li class="breadcrumbs__item"><span> 
+            <svg>
+              <use xlink:href="img/symbols.svg#svg-breadcrumb-arrow"></use>
+            </svg></span><span> Избранное</span></li>
+      </div>
+      <ul class="navigation-mobile__list">
+        <li class="navigation-mobile__item"><a class="navigation-mobile__link" href="#">Категории</a></li>
+        <li class="navigation-mobile__item"><a class="navigation-mobile__link" href="#">Акции</a></li>
+        <li class="navigation-mobile__item"><a class="navigation-mobile__link" href="#">О компании</a></li>
+        <li class="navigation-mobile__item"><a class="navigation-mobile__link" href="#">Доставка</a></li>
+        <li class="navigation-mobile__item"><a class="navigation-mobile__link" href="#">Оплата</a></li>
+        <li class="navigation-mobile__item"><a class="navigation-mobile__link" href="#">Прайс-лист</a></li>
+        <li class="navigation-mobile__item"><a class="navigation-mobile__link" href="#">Контакты</a></li>
+        <li class="navigation-mobile__item"><a class="navigation-mobile__link" href="#">Избранное</a></li>
+      </ul>
+      <div class="navigation-mobile__box">
+        <div class="navigation-mobile__left">
+          <div class="navigation-mobile__phone"><span>
+              <svg>
+                <use xlink:href="img/symbols.svg#svg-tel"></use>
+              </svg></span><span>+7 (495)-876-98-34</span></div>
+          <div class="navigation-mobile__email"><span>
+              <svg>
+                <use xlink:href="img/symbols.svg#svg-email"></use>
+              </svg></span><span>tushpa@info.ru</span></div>
+          <div class="navigation-mobile__city"><span> </span><span>Москва</span></div>
+        </div>
+        <div class="navigation-mobile__right">
+          <div class="navigation-mobile__whatsapp">
+            <svg>
+              <use xlink:href="img/symbols.svg#svg-whatsapp"></use>
+            </svg>
+          </div>
+          <div class="navigation-mobile__logo"><img src="img/logo-footer.png" alt=""></div>
+        </div>
+      </div>
+    </div>
     <main class="main">
+      <div class="section section_navigation">
+        <div class="mobile-nav">
+          <ul class="mobile-nav__list">
+            <li class="mobile-nav__item">
+              <div class="mobile-nav__link">
+                <svg>
+                  <use xlink:href="img/symbols.svg#svg-home"></use>
+                </svg>
+              </div>
+            </li>
+            <li class="mobile-nav__item">
+              <div class="mobile-nav__link">
+                <svg>
+                  <use xlink:href="img/symbols.svg#svg-cart"></use>
+                </svg>
+              </div>
+            </li>
+            <li class="mobile-nav__item mobile-nav__item_active">
+              <div class="mobile-nav__link mobile-nav__search">
+                <svg>
+                  <use xlink:href="img/symbols.svg#svg-search"></use>
+                </svg>
+              </div>
+            </li>
+            <li class="mobile-nav__item" data-modal-open="login">
+              <div class="mobile-nav__link">
+                <svg>
+                  <use xlink:href="img/symbols.svg#svg-user"></use>
+                </svg>
+              </div>
+            </li>
+            <li class="mobile-nav__item js-open-burger">
+              <div class="mobile-nav__link">
+                <svg>
+                  <use xlink:href="img/symbols.svg#svg-burger"></use>
+                </svg>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
       <div class="basket">
-        <div class="container"><div class="catalog-box__top">
-<div class="breadcrumbs">
-<ul class="breadcrumbs__list">
-<li class="breadcrumbs__item"><span> Главная</span></li>
-<li class="breadcrumbs__item"><span> Бакалея</span></li>
-<li class="breadcrumbs__item"><span> Макароны</span></li>
-</ul>
-</div>
-<div class="sort-filter">
-<div class="sort-filter__name"><span><svg><use xlink:href="img/symbols.svg#svg-cart-delete"></use></svg></span></div>
-<div class="sort-filter__text"><span>Очистить корзину</span>
-</div>
-</div>
-</div>
+        <div class="container">
           <div class="basket-top">
             <div class="basket__conditions">
               <div class="basket__minimal"><label>
@@ -411,105 +487,15 @@
           </ul>
         </div>
       </div>
-      <div class="order">
-        <div class="container">
-          <div class="order__title"><span>Оформление заказа</span></div>
-          <div class="order__box">
-            <div class="order__personal order-personal">
-              <div class="basket__subtitle"><span>Личные данные</span></div>
-              <ul class="order-personal__list">
-                <li class="order-personal__item">
-                  <div class="order-personal__input">
-                    <input type="text" placeholder="ФИО"/>
-                  </div>
-                </li>
-                <li class="order-personal__item">
-                  <div class="order-personal__input">
-                    <input type="text" placeholder="Название компании"/>
-                  </div>
-                </li>
-                <li class="order-personal__item">
-                  <div class="order-personal__input">
-                    <input type="text" placeholder="Телефон"/>
-                  </div>
-                </li>
-                <li class="order-personal__item">
-                  <div class="order-personal__input">
-                    <input type="text" placeholder="E-mail"/>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="order__delivery order-delivery">
-              <div class="basket__subtitle"><span>Способ доставки</span></div>
-              <div class="order-delivery__btn"><span>Доставка</span></div>
-              <div class="order-delivery__pickup"><span>Самовывоз</span></div>
-            </div>
+      <div class="basket-bottom">
+        <div class="basket__promo">
+          <div class="basket__input">
+            <input type="text" placeholder=""/>
           </div>
-          <div class="order-center">
-            <div class="order__address order-address">
-              <div class="order-address__title"><span>Адрес доставки</span></div>
-              <div class="order-address__input">
-                <input type="text" placeholder="Улица"/>
-              </div>
-              <div class="order-address__input_mini">
-                <div class="order-address__input">
-                  <input type="text" placeholder="Улица"/>
-                </div>
-                <div class="order-address__input">
-                  <input type="text" placeholder="Улица"/>
-                </div>
-                <div class="order-address__input">
-                  <input type="text" placeholder="Улица"/>
-                </div>
-              </div>
-              <div class="order-address__input">
-                <textarea name="" cols="30" rows="10" placeholder="Комментарий"></textarea>
-              </div>
-              <div class="order-address__select"><span> 
-                  <svg>
-                    <use xlink:href="img/symbols.svg#svg-map"></use>
-                  </svg></span><span>Выбрать из сохраненных адресов</span></div>
-            </div>
-            <div class="order__time order-time">
-              <div class="order-time__box">
-                <div class="order-time__title"><span>Дата и время</span></div>
-                <div class="order-time__left">
-                  <div class="order-time__btn"><span>9:00 – 12:00</span></div>
-                  <div class="order-time__btn"><span>12:00 – 15:00</span></div>
-                  <div class="order-time__btn"><span>15:00 – 18:00</span></div>
-                  <div class="order-time__btn"><span>18:00 – 21:00</span></div>
-                  <div class="order-time__btn"><span>9:00 – 21:00</span></div>
-                </div>
-              </div>
-              <div class="order-time__right"><div class="datepicker-here"></div></div>
-            </div>
-          </div>
-          <div class="order-bottom">
-            <div class="payment-method">
-              <div class="payment-method__title"><span>Способ оплаты</span></div>
-              <ul class="payment-method__list">
-                <li class="payment-method__item"><span> 
-                    <svg>
-                      <use xlink:href="img/symbols.svg#svg-payment-card-1"></use>
-                    </svg></span><span>Банковская карта</span></li>
-                <li class="payment-method__item"><span> 
-                    <svg>
-                      <use xlink:href="img/symbols.svg#svg-payment-card-2"></use>
-                    </svg></span><span>Наличные</span></li>
-                <li class="payment-method__item"><span> 
-                    <svg>
-                      <use xlink:href="img/symbols.svg#svg-payment-card-3"></use>
-                    </svg></span><span>Безналичный расчет</span></li>
-              </ul>
-            </div>
-            <div class="comment">
-              <div class="comment__title"><span>Комментарий к заказу</span></div>
-              <div class="comment__textarea">
-                <textarea name="" cols="30" rows="10" placeholder="Комментарий"></textarea>
-              </div>
-            </div>
-          </div>
+        </div>
+        <div class="basket__result">
+          <div class="basket__sum"><span>Итого:</span><span>31 458 Р</span></div>
+          <div class="basket__btn"><span>Оформить заказ</span></div>
         </div>
       </div>
     </main>
@@ -572,6 +558,32 @@
         </div>
       </div>
     </footer>
+    <div class="modal-container">
+      <div class="modal modal__login" data-modal="login">
+        <div class="btn-nav__menu">
+          <li class="breadcrumbs__item"><span> 
+              <svg>
+                <use xlink:href="img/symbols.svg#svg-breadcrumb-arrow"></use>
+              </svg></span><span> Избранное</span></li>
+        </div>
+        <div class="modal__box">
+          <div class="modal__title"><span>Войти</span></div>
+          <div class="modal__input">
+            <input type="text"/>
+          </div>
+          <div class="modal__input">
+            <input type="text"/>
+          </div>
+          <div class="modal__hints"><a class="modal__remember">
+              <label><span class="modal__checkbox">
+                  <input type="checkbox"/>
+                  <svg>
+                    <use xlink:href="img/symbols.svg#svg-checkbox-active"></use>
+                  </svg></span><span>Запомнить меня</span></label></a><a class="modal__forgotten"><span>Забыли пароль?</span></a></div>
+          <div class="modal__btn"><span>Войти</span></div>
+        </div>
+      </div>
+    </div>
     <script src="js/libs.js"></script>
     <script src="js/script.js"></script>
   </body>
